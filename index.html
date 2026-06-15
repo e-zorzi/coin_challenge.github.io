@@ -198,7 +198,7 @@ footer {
         <div class="hero-buttons">
             <a href="#" class="btn btn-primary">Submit</a>
             <a href="https://arxiv.org/abs/2604.00265" class="btn btn-secondary">Paper</a>
-            <a href="#" class="btn btn-secondary">Code</a>
+            <a href="https://github.com/e-zorzi/coin_challenge" class="btn btn-secondary">Code</a>
         </div>
     </div>
 </section>
@@ -218,7 +218,8 @@ footer {
 <p>2) ask a clarifying question to the user when the description and the image are ambiguous</p>
 <strong>The goal of the agents is to correctly identify the image that matches the object description, while asking as few questions as possible to the user.</strong> 
 <h2> Evaluation </h2>
-Each multimodal agent will be evaluated on N episodes, on a varied set of object descriptions and images. Each episode contains a variable number of images presented to the agent sequentially. 
+Each multimodal agent will be evaluated on N episodes, on a varied set of object descriptions and images. To ensure reproducibility, the user 
+is replaced by a large Vision-Language Model ('Oracle'), which will be used to answer the agent's questions during evaluation. Each episode contains a variable number of images presented to the agent sequentially. 
 The agents will be evaluated on a combination of accuracy and number of questions asked, with a strong emphasis on accuracy.
     </div>
 </section>
